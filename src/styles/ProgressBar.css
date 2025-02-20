@@ -1,0 +1,38 @@
+.progressbar-container {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: fit-content;
+  height: auto;
+
+}
+
+.progressbar-container ul {
+  all: unset;
+  list-style-type: none;
+}
+
+.progressbar-container ul li {
+    font-size: 40px;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid background;
+    overflow: hidden;
+    background: linear-gradient(to right, #ff6666, #9999ff);
+    background-size: 300% 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .progressbar-container ul li:hover {
+    animation: moveColor 3s linear infinite alternate;
+  }
+  
+
+  @keyframes moveColor {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
