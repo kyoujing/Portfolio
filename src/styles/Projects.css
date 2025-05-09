@@ -1,0 +1,77 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 78%;
+  margin: 1.2rem auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(111, 111, 111, 0.5);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.left {
+  color: white;
+  left: 8%;
+}
+
+.right {
+  color: white;
+  right: 8%;
+}
+
+.left:hover,
+.right:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.pList {
+  all: unset;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.projects:hover {
+  background-color: black;
+}
+
+.gLink,
+.demo-link {
+  all: unset;
+  color: aqua;
+  font-size: 1.2rem;
+}
+
+.demo-link {
+  color: greenyellow;
+  margin-left: 10px;
+}
+
+.gLink:hover,
+.demo-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  scale: 1.1;
+}
