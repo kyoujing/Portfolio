@@ -35,8 +35,8 @@ const AboutMe = () => {
         {lang === "fi" ? "English" : "Suomeksi"}
       </button>
       <h1>Jingwang Jiang (Jing)</h1>
-      <p>{content[lang].intro}</p>
-      <p>{content[lang].extra}</p>
+      <p className="aboutMe">{content[lang].intro}</p>
+      <p className="aboutMe">{content[lang].extra}</p>
     </>
   );
 };

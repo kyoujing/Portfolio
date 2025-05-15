@@ -2,7 +2,7 @@
   display: flex;
   height: 95%;
   width: 95%;
-  margin: 1.5% auto;
+  margin: 1% auto;
   background-color: #b3daff;
   border-radius: 12px;
 }
@@ -118,7 +118,6 @@
     border-radius: 0;
   }
 
-
 }
 
 @media screen and (max-width: 1120px) {
@@ -133,7 +132,9 @@
 
 
 @media screen and (max-width: 768px) {
-
+  .main-layout {
+    height: 99%;
+  }
   .button-div {
     margin-top: 2px;
     height: 40%;
