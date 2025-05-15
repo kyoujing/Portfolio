@@ -1,0 +1,167 @@
+.main-layout {
+  display: flex;
+  height: 95%;
+  width: 95%;
+  margin: 1.5% auto;
+  background-color: #b3daff;
+  border-radius: 12px;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
+.button-div {
+  width: 95%;
+}
+
+.tab-button {
+  all: unset;
+  display: flex;
+  width: 90%;
+  height: 60px;
+  font-size: 26px;
+  align-items: center;
+  margin-top: 30px;
+  padding: 5%;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #ff6666, #9999ff);
+  background-size: 300% 100%;
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.tab-button:first-child {
+  margin: 0;
+}
+
+.tab-button:hover {
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  animation: moveColor 3s linear infinite alternate;
+  scale: 1.05;
+}
+
+.icons {
+  margin-right: 6px;
+  scale: 1.1;
+}
+
+.buttonText {
+  font-size: 1.6rem;
+}
+
+@keyframes moveColor {
+  0% {
+    background-position: 0% 50%;
+    color: black;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.contact-info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30%;
+  padding: 20% 0;
+  border: 1px solid palevioletred;
+  border-radius: 50%;
+}
+
+
+.links {
+  all: unset;
+  color: blue;
+}
+
+.links:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0f2862;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1600px) {
+  .button-div {
+    margin-top: 20%;
+  }
+
+  .contact-info {
+    width: 90%;
+    border-radius: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 1120px) {
+  .sidebar {
+    width: 25%;
+  }
+
+  .tab-button{
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .button-div {
+    margin-top: 2px;
+    height: 40%;
+  }
+
+  .sidebar {
+    width: 20%;
+  }
+
+  .icons {
+    scale: 1.5;
+    margin: auto;
+  }
+
+  .tab-button {
+    height: 25%;
+    font-size: 1em;
+  }
+
+  .buttonText {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .contact-info {
+    display: none;
+  }
+}

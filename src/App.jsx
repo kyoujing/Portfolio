@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import './styles/App.css'
-import ProgressBar from "./components/ProgressBar";
-import Header from './components/Header';
-function App() {
+import "./styles/App.css";
+import MainLayout from "./components/MainLayout";
+
+const App = () => {
   return (
     <>
-    <Header />
-    <ProgressBar />
+      <MainLayout />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

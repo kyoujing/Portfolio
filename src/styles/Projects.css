@@ -1,0 +1,138 @@
+.carousel {
+  display: flex;
+  width: 1200px;
+  height: 800px;
+  justify-content: center;
+  position: relative;
+  margin: 1.2rem auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(111, 111, 111, 0.5);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.left {
+  color: white;
+  left: 8%;
+}
+
+.right {
+  color: white;
+  right: 8%;
+}
+
+.left:hover,
+.right:hover {
+  cursor: pointer;
+}
+
+.pList {
+  all: unset;
+  width: ;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.projects:hover {
+  background-color: black;
+}
+
+.gLink,
+.demo-link {
+  all: unset;
+  color: aqua;
+  font-size: 1.2rem;
+}
+
+.demo-link {
+  color: greenyellow;
+  margin-left: 10px;
+}
+
+.gLink:hover,
+.demo-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1920px) {
+  .carousel {
+    width: 900px;
+    height: 600px;
+  }
+
+  .pList {
+    margin-bottom: 25px;
+  }
+
+}
+
+@media screen and (max-width: 1580px) {
+  .carousel {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    width: 800px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .carousel {
+    margin-top: 5%;
+    width: 700px;
+    height: 500px;
+  }
+  .pList {
+    margin-top: 10%;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+  .carousel {
+    margin-top: 10%;
+    width: 600px;
+    height: 400px;
+  }
+  .pList {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 550px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .carousel {
+    width: 400px;
+    height: 250px;
+  }
+}

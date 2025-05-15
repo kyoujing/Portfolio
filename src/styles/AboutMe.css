@@ -1,0 +1,15 @@
+.lang-button{
+    all: unset;
+    width: fit-content;
+    height: 2em;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: white;
+    font-family: "JetBrains Mono", serif;
+}
+
+.lang-button:hover {
+    background-color: #4169E1;
+    color: white;
+    cursor: pointer;
+}
